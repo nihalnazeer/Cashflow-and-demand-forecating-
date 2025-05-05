@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "XAI",
+			"path": "."
+		},
+		{
+			"name": "Predict Future Sales",
+			"path": "../Desktop/XAI/Predict Future Sales"
+		}
+	],
+	"settings": {}
+}
