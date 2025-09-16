@@ -1,5 +1,5 @@
 nvenv/
 Predict Future Sales/
-training_data/
-results/
-
+modelnotebook/training_data/
+raw_data/
+models/
