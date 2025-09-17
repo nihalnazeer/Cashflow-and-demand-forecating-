@@ -3,4 +3,4 @@ Predict Future Sales/
 modelnotebook/training_data/
 raw_data/
 models/
-Backend/.envBackend/.env
+.env
