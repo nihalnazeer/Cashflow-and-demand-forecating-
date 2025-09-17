@@ -1,0 +1,3 @@
+chroma_path: ./blacklane-optim
+db_name: blacklane-retail
+uri: mongodb://localhost:27017/blacklane-retail

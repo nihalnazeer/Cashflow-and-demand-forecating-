@@ -1,0 +1,60 @@
+{
+  "pipeline_id": "insights",
+  "description": "testing sub-schema",
+  "created_by": "nihal nazeer",
+  "created_at": "2025-09-16T23:49:47.023423Z",
+  "tasks": [
+    {
+      "task_id": 1,
+      "description": "testing the sub-schema",
+      "task_type": "VECTOR_STORE_SEARCH",
+      "endpoint": "testing.test",
+      "inputs": [],
+      "input_source": null,
+      "wait_for_input": false,
+      "output_collection": "task_results",
+      "prompt_template": null,
+      "parameters": {
+        "collection_name": "forecast_test",
+        "query": "{{user_query}}"
+      },
+      "cron": null,
+      "rerun": true
+    }
+  ],
+  "global_config": {
+    "default_output_db": "blacklane-retail",
+    "logging_level": "INFO",
+    "retry_on_failure": true,
+    "max_retries": 2,
+    "allowed_task_types": [
+      "GET",
+      "POST",
+      "PUT",
+      "LLM",
+      "LLM_GENERATE",
+      "LOCAL",
+      "VECTOR_STORE_ADD",
+      "VECTOR_STORE_SEARCH",
+      "CHUNK_TEXT",
+      "EVALUATE",
+      "CUSTOM_ALERT"
+    ],
+    "allowed_domains": [],
+    "backend_host": "http://127.0.0.1:8000",
+    "frontend_host": "http://127.0.0.1:3636",
+    "llm_config": {},
+    "vector_db_config": {
+      "type": "chroma",
+      "path": "./blacklane-optim"
+    }
+  },
+  "metadata": {
+    "tags": [],
+    "pipeline_type": "ai-query",
+    "linked_pipelines": [],
+    "status": "draft",
+    "parent_version": null,
+    "parent_pipeline_id": "Production"
+  }
+}
