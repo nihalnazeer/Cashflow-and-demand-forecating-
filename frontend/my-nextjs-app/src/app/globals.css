@@ -1,0 +1,83 @@
+/* Import Tailwind's base, components, and utilities */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Define the color palette for both light and dark modes */
+@layer base {
+  :root {
+    /* Light Mode Colors */
+    --background: 240 10% 98%;      /* A very light, soft gray for the page background */
+    --foreground: 240 10% 3.9%;     /* Dark text for high contrast */
+
+    --card: 240 0% 100%;             /* Pure white for cards to make them pop */
+    --card-foreground: 240 10% 3.9%;
+
+    --popover: 240 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    --primary: 262.1 83.3% 57.8%;    /* A nice, vibrant purple for accents */
+    --primary-foreground: 210 20% 98%;
+
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 20% 98%;
+
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 262.1 83.3% 57.8%;
+
+    --radius: 0.5rem;
+    
+    /* Custom Chart Colors */
+    --chart-green: 160 100% 30%;
+    --chart-red: 0 84.2% 60.2%;
+    --chart-blue: 210 100% 50%;
+    --chart-purple: 262.1 83.3% 57.8%;
+  }
+
+  .dark {
+    /* Dark Mode Colors */
+    --background: 240 10% 3.9%;      /* A very dark, near-black for the page background */
+    --foreground: 210 20% 98%;      /* Light text for high contrast */
+
+    --card: 240 5% 10%;             /* A slightly lighter dark gray for cards */
+    --card-foreground: 210 20% 98%;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 210 20% 98%;
+
+    --primary: 263.4 90.2% 61.4%;
+    --primary-foreground: 210 20% 98%;
+
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 210 20% 98%;
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 210 20% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 20% 98%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 263.4 90.2% 61.4%;
+    
+    /* Custom Chart Colors */
+    --chart-green: 140 70% 50%;
+    --chart-red: 0 72% 51%;
+    --chart-blue: 210 90% 60%;
+    --chart-purple: 263.4 90.2% 61.4%;
+  }
+}

@@ -1,6 +1,8 @@
-from pydantic import BaseModel
+# pydantic_models.py
+
+from pydantic import BaseModel, ConfigDict  # 👈 Make sure ConfigDict is imported
 from typing import List, Optional, Union
-from datetime import datetime
+from datetime import datetime, date
 
 class HistoricalTrendResponse(BaseModel):
     month: datetime
@@ -31,5 +33,15 @@ class InsightResponse(BaseModel):
     narrative: Optional[str]
 
 class DynamicHistoricalResponse(BaseModel):
-    dimension: Union[str, datetime]
+    dimension: Union[str, date, datetime]
     metric: float
+    
+    # 👇 Confirm this line exists
+    model_config = ConfigDict(from_attributes=True)
+
+class MonthlySalesTrend(BaseModel):
+    month: date
+    total_revenue: float
+
+    # 👇 And confirm this line exists
+    model_config = ConfigDict(from_attributes=True)
